@@ -12,6 +12,7 @@
     font-size: 36px;
 }
 
-#sec-id {
-
+#sec-id .cooler {
+    color: lightgreen;
+    font-weight: bold;
 }
