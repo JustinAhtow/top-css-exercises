@@ -5,13 +5,11 @@ body {
 }
 
 .header {
-  height: 72px;
   background: darkmagenta;
   color: white;
 }
 
 .footer {
-  height: 72px;
   background: #eee;
   color: darkmagenta;
 }
@@ -26,4 +24,59 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/* my solution */
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  min-width: 300px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 24px 0;
+  font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.card-container {
+  padding: 48px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 0 1 300px;
+  padding: 20px;
+}
+
+.header {
+  font-size: 32px;
+  font-weight: 900;
+  padding: 16px;
+}
+
+.footer {
+  text-align: center;
+  padding: 24px;
 }
